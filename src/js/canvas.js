@@ -37,7 +37,7 @@ class Particle {
     this.originalX = x;
     this.originalY = y;
     this.velocity = 0.05 * Math.random() + 0.01;
-    this.randomLocationFromCenter = randomIntFromRange(50, 120);
+    this.randomLocationFromCenter = randomIntFromRange(70, 210);
     this.previousMouse = {
       x: x,
       y: y
@@ -85,7 +85,7 @@ function init() {
   for (let i = 0; i < 150; i++) {
     let x = canvas.width / 2;
     let y = canvas.height / 2;
-    let radius = Math.random() * 100 + 0.5;
+    let radius = Math.random() * 100 + 15;
     let color = randomColor(colors);
     particles.push(new Particle(x, y, radius, color))
   }

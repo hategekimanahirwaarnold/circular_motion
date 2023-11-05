@@ -137,7 +137,7 @@ var Particle = /*#__PURE__*/function () {
     this.originalX = x;
     this.originalY = y;
     this.velocity = 0.05 * Math.random() + 0.01;
-    this.randomLocationFromCenter = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["randomIntFromRange"])(50, 120);
+    this.randomLocationFromCenter = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["randomIntFromRange"])(70, 210);
     this.previousMouse = {
       x: x,
       y: y
@@ -185,7 +185,7 @@ function init() {
   for (var i = 0; i < 150; i++) {
     var x = canvas.width / 2;
     var y = canvas.height / 2;
-    var radius = Math.random() * 100 + 0.5;
+    var radius = Math.random() * 100 + 15;
     var color = Object(_utils__WEBPACK_IMPORTED_MODULE_0__["randomColor"])(colors);
     particles.push(new Particle(x, y, radius, color));
   }
